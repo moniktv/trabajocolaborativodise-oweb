@@ -1,0 +1,15 @@
+nav,.contenedor,footer,.principal,aside
+{
+max-width: 90%;
+margin: auto;
+text-align: center;
+}
+nav{
+ background-color: rgb(39, 39, 153);
+    }
+.contenedor{
+background-color: coral;
+    }
+    footer{
+        background-color: blue;
+    }
