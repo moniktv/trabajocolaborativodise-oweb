@@ -1,15 +1,23 @@
-nav,.contenedor,footer,.principal,aside
+nav,.contenedor,footer,.principal,aside,header
 {
 max-width: 90%;
 margin: auto;
 text-align: center;
+
+}
+header{
+    background-color: #005883;
 }
 nav{
- background-color: rgb(39, 39, 153);
+ background-color: #f47920;
     }
 .contenedor{
-background-color: coral;
+background-color: #F0B429;
+    }
+   
+    .principal{
+        background-color:#F0B429;
     }
     footer{
-        background-color: blue;
+        background-color: #005883;
     }
