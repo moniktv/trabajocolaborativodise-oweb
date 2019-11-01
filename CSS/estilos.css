@@ -7,19 +7,69 @@ text-align: center;
 }
 header{
     background-color: #005883;
-    
+    margin: auto;
+    text-align: center;
 }
 nav{
  background-color: #f47920;
+ font-family: 'Franklin Gothic Medium';
+ font-size: 100%;
+ text-align: left;
+ margin:center;
+
+
     }
 .contenedor{
 background-color: #F0B429;
-
+width: 100%;
+text-align: center;
+margin: auto;
     }
    
     .principal{
         background-color:#F0B429;
+
     }
     footer{
         background-color: #005883;
     }
+    .menu li {
+        display: inline-block;
+     }
+     li a, btnDesplegable {
+         display: inline-block;
+         color: black;
+         padding: 0.9em 1em;
+         text-align: center;
+         text-decoration: center;
+     }
+     .contenidoDesplegable{
+         display: none;
+         position: absolute;
+         background-color: blanchedalmond;
+         min-width: 8em;
+     }
+     .contenidoDesplegable line a{
+         color: black;
+         padding: 0.2em 1em;
+         display:block ;
+         text-decoration: none;
+         text-align: center;
+         
+     }
+     .contenidoDesplegable a:hover{
+         background-color: rgba(49, 82, 131, 0.932);
+     }
+     .desplegable:hover .contenidoDesplegable{
+         display: block;
+     }
+     li a:hover{
+         background-color: white;
+     }
+     .desplegableactividad:hover .contenidoDesplegableactividad{
+         display: block;
+     }
+     .contador {
+         text-align: right;
+     }
+ 
