@@ -1,4 +1,4 @@
-.contenedor,footer,.principal,aside,header
+footer,.principal,aside,header
 {
 max-width: 90%;
 margin: auto;
@@ -15,7 +15,8 @@ nav{
     }
 .contenedor{
 background-color: #F0B429;
-
+max-width: 90%;
+margin: auto;
     }
     .principal{
         background-color:#F0B429;
