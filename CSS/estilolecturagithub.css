@@ -12,16 +12,18 @@ nav{
     max-width: 90%;
     margin: auto;
  background-color: #5c6161;
+ font-family: 'Franklin Gothic Medium';
     }
 .contenedor{
     max-width: 90%;
 margin: auto;
 background-color: #F0B429;
-
+font-family: 'Franklin Gothic Medium';
     }
     .principal{
         background-color:#F0B429;
     }
     footer{
         background-color: #005883;
+        font-family: 'Franklin Gothic Medium';
     }
