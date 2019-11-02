@@ -31,23 +31,21 @@ function delJoin(ele){var pos = join1.indexOf(ele);while (pos>-1){join1.splice(p
 pos = join2.indexOf(ele);while (pos>-1){join1.splice(pos,1);join2.splice(pos,1);pos = join2.indexOf(ele);}drawGame();}
 function drawJoin(posX,posY){var canvas = document.getElementById("joinCanvas");canvas.width=canvas.width;var context = canvas.getContext("2d");
 if (sel1.localeCompare("")!=0){var canLeft = document.getElementById("ardoraAct").offsetLeft;var canTop = document.getElementById("ardoraAct").offsetTop;
-context.lineWidth=2.5;var posDivX=document.getElementById(sel1).parentNode.parentNode.offsetLeft+$("#"+sel1).width()+10;var posDivY=document.getElementById(sel1).offsetTop+12+5;
+context.lineWidth=2.5;var posDivX=document.getElementById(sel1).parentNode.parentNode.offsetLeft+$("#"+sel1).width()+10;var posDivY=document.getElementById(sel1).offsetTop+10+5;
 context.strokeStyle=colorButton;context.fillStyle=colorSele;context.lineCap = "round";context.beginPath();context.arc(posDivX, posDivY, 5, 0, 2 * Math.PI, false);
 context.fill();context.moveTo(posDivX,posDivY);context.quadraticCurveTo(posDivX+50,posDivY,posX,posY);context.arc(posX, posY, 5,0,2*Math.PI, false);context.stroke();}}
 function drawGame(){var canvas = document.getElementById("joinCanvasDo");canvas.width=canvas.width;var context = canvas.getContext("2d");
 for (i = 0; i < join1.length; i++) {var canLeft = document.getElementById("ardoraAct").offsetLeft;var canTop = document.getElementById("ardoraAct").offsetTop;context.lineWidth=2.5;
 if(parseInt(join1[i].substr(6,1))<parseInt(join2[i].substr(6,1))){var posX=document.getElementById(join2[i]).parentNode.parentNode.offsetLeft-5;var posY=document.getElementById(join2[i]).offsetTop+12+5;//12 é o tamaño da fonte;
-var posDivX=document.getElementById(join1[i]).parentNode.parentNode.offsetLeft+$("#"+join1[i]).width()+10;var posDivY=document.getElementById(join1[i]).offsetTop+12+5;}
-else{var posX=document.getElementById(join1[i]).parentNode.parentNode.offsetLeft-5;var posY=document.getElementById(join1[i]).offsetTop+12+5;
-var posDivX=document.getElementById(join2[i]).parentNode.parentNode.offsetLeft+$("#"+join2[i]).width()+10;var posDivY=document.getElementById(join2[i]).offsetTop+12+5;}
+var posDivX=document.getElementById(join1[i]).parentNode.parentNode.offsetLeft+$("#"+join1[i]).width()+10;var posDivY=document.getElementById(join1[i]).offsetTop+10+5;}
+else{var posX=document.getElementById(join1[i]).parentNode.parentNode.offsetLeft-5;var posY=document.getElementById(join1[i]).offsetTop+10+5;
+var posDivX=document.getElementById(join2[i]).parentNode.parentNode.offsetLeft+$("#"+join2[i]).width()+10;var posDivY=document.getElementById(join2[i]).offsetTop+10+5;}
 context.strokeStyle=colorSele;context.fillStyle=colorSele;context.lineCap = "round";context.beginPath();context.arc(posDivX, posDivY, 5, 0, 2 * Math.PI, false);context.fill();
 context.moveTo(posDivX,posDivY);context.quadraticCurveTo(posDivX+50,posDivY,posX,posY);context.stroke();context.beginPath();
 context.arc(posX, posY, 5,0,2*Math.PI, false);context.fill();}}
 function randomSort(){
-for (i = 0; i < con1.length; i++) {var ind = Math.floor(Math.random()*(con1.length-1))+1;var divId="conten1_"+parseInt(ind);
-while (document.getElementById(divId).innerHTML.localeCompare("")!=0){ind++;if (ind>con1.length){ind=1;}divId="conten1_"+parseInt(ind);}document.getElementById(divId).innerHTML=con1[i];}
-for (i = 0; i < con2.length; i++) {var ind = Math.floor(Math.random()*(con2.length-1))+1;var divId="conten2_"+parseInt(ind);
-while (document.getElementById(divId).innerHTML.localeCompare("")!=0){ind++;if (ind>con2.length){ind=1;}divId="conten2_"+parseInt(ind);}document.getElementById(divId).innerHTML=con2[i];}
+for (i = 0; i < con1.length; i++) {document.getElementById("conten1_" + parseInt(i+1)).innerHTML = con1[i];}
+for (i = 0; i < con2.length; i++) {document.getElementById("conten2_" + parseInt(i+1)).innerHTML = con2[i];}
 }
 function isCorrect(){
 var correct=true; successes=0;var joinWords1=[];var joinWords2=[];
