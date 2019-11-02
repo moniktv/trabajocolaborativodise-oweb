@@ -4,9 +4,12 @@ h1{
 }
 footer{
     background-color: #005883;
+    padding: 5px;
+    font-family: 'century gothic', sans-serif;
 }
 header{
     background-color: #005883;
+
     margin: auto;
     text-align: center;
 }
@@ -20,6 +23,9 @@ h2{
     color:black
     
 }
+
+
+
 
   
 
