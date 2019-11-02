@@ -1,8 +1,10 @@
-nav,.contenedor,footer,.principal,aside,header
+nav,footer,aside,header,.contenedor,.principal
 {
 max-width: 90%;
 margin: auto;
 text-align: center;
+
+
 
 }
 header{
@@ -23,7 +25,7 @@ nav{
 
 background-color: #F0B429;
 width:100%;
-text-align: center ;
+text-align: left ;
 margin: auto;
 font-family: 'Franklin Gothic Medium';
 
