@@ -11,16 +11,16 @@ header{
     background-color: #005883;
     margin: auto;
     text-align: center;
+
 }
-nav{
+    nav{
  background-color: #f47920;
  font-family: 'Franklin Gothic Medium';
  font-size: 100%;
  text-align: left;
- margin:center;
-
-
-    }
+  margin:center;
+  
+    }  
 .contenedor{
 
 background-color: #F0B429;
