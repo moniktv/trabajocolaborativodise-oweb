@@ -10,7 +10,7 @@ text-align: center;
 header{
     background-color: #005883;
     margin: auto;
-    text-align: center;
+    text-align: left;
 
 }
     nav{
@@ -23,7 +23,7 @@ header{
     }  
 .contenedor{
 
-background-color: #F0B429;
+background-color: #808080;
 width:100%;
 text-align: left ;
 margin: auto;
@@ -33,12 +33,12 @@ font-family: 'Franklin Gothic Medium';
 
    
     .principal{
-        background-color:#F0B429;
+        background-color:#808080;
         font-family: 'Franklin Gothic Medium';
         width:100%;
     }
     footer{
-        background-color: #005883;
+        background-color: #F0B429;
     }
     .menu li {
         display: inline-block;
