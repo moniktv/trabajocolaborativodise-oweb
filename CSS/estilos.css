@@ -1,29 +1,31 @@
-nav,.contenedor,footer,.principal,aside,header
+nav,footer,aside,header,.contenedor,.principal
 {
 max-width: 90%;
 margin: auto;
 text-align: center;
 
+
+
 }
 header{
     background-color: #005883;
     margin: auto;
-    text-align: center;
+    text-align: left;
+
 }
-nav{
+    nav{
  background-color: #f47920;
  font-family: 'Franklin Gothic Medium';
  font-size: 100%;
  text-align: left;
- margin:center;
-
-
-    }
+  margin:center;
+  
+    }  
 .contenedor{
 
-background-color: #F0B429;
+background-color: #808080;
 width:100%;
-text-align: center ;
+text-align: left ;
 margin: auto;
 font-family: 'Franklin Gothic Medium';
 
@@ -31,12 +33,12 @@ font-family: 'Franklin Gothic Medium';
 
    
     .principal{
-        background-color:#F0B429;
+        background-color:#808080;
         font-family: 'Franklin Gothic Medium';
         width:100%;
     }
     footer{
-        background-color: #005883;
+        background-color: #F0B429;
     }
     .menu li {
         display: inline-block;
