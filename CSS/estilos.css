@@ -115,3 +115,41 @@ font-family: 'Franklin Gothic Medium';
         h1{
             color: whitesmoke;
         }
+        .box-autor,.box-video{
+            width: 40%;
+            background:rgba(49, 82, 131, 0.932);
+              padding: 16px;
+              text-align: center;
+              margin:auto;
+              margin-top: 5%;
+              color:black;
+              font-family: 'Franklin Gothic Medium';
+            box-shadow: 2px 4px 10px 0 rgba(0,0,0,.3);
+          }
+          .box-img {
+              border-radius: 50%;
+              width: 200px;
+            height: 200px;
+            object-fit: cover;
+          }
+          .box-img-multimedia {
+          
+              width: 200px;
+            height: 200px;
+            object-fit: cover;
+          }
+          .box p{
+              font-size: 20px;
+              letter-spacing: 3px;
+            font-weight: 100;
+            text-align: justify;
+          }
+          .autor-content, .video-content{
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 30px;
+          }
+          .video-content{
+            width: 100%;
+          }
+          
